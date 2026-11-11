@@ -1,0 +1,55 @@
+/* --- ESTILOS DO PAINEL DE CONTROLE DE TEMPO --- */
+#controls {
+    margin: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Espaçamento organizado entre os botões */
+}
+
+#controls button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out; /* Transição suave para os efeitos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito ao passar o cursor (Hover) */
+#controls button:hover {
+    transform: translateY(-2px); /* Eleva levemente o botão */
+    filter: brightness(1.15);    /* Deixa a cor um pouco mais viva */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Efeito ao clicar (Active) */
+#controls button:active {
+    transform: translateY(1px); /* Afunda levemente o botão */
+    filter: brightness(0.9);    /* Escurece um pouco ao pressionar */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Cores personalizadas e distintas para cada botão */
+#btn-pause {
+    background-color: #D32F2F; /* Vermelho Alerta */
+}
+
+#btn-slowest {
+    background-color: #512DA8; /* Roxo Escuro (Super Lento) */
+}
+
+#btn-slow {
+    background-color: #0288D1; /* Azul (Lento / 0.5x) */
+}
+
+#btn-normal {
+    background-color: #388E3C; /* Verde Sólido (Normal / 1x) */
+}
+
+#btn-fast {
+    background-color: #F57C00; /* Laranja Energético (Acelerado / 2x) */
+}

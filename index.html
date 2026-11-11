@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Ecossistema Avançado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="ui-container">
+        <h1>Simulador de Ecossistema Evolutivo</h1>
+        
+        <!-- PAINEL DE CONTROLE DE TEMPO -->
+<div id="controls" style="margin: 10px 0;">
+    <button id="btn-pause">Pausar</button>
+    <button id="btn-slowest">0.25x (Super Lento)</button>
+    <button id="btn-slow">0.5x</button>
+    <button id="btn-normal" style="font-weight: bold;">1x (Normal)</button>
+    <button id="btn-fast">2x</button>
+</div>
+
+        <div id="stats">
+            Estação: <span id="season-indicator">Primavera</span> | 
+            Plantas: <span id="plant-count">0</span> | 
+            Rápidos: <span id="fast-count">0</span> | 
+            Tanques: <span id="tank-count">0</span> | 
+            Carnívoros: <span id="carn-count">0</span>
+        </div>
+        <div class="legend">
+            ⚪ Plantas | 🟢 H. Rápidos (Fugitivos) | 🔵 H. Tanque (Revida) | 🔴 Predadores
+        </div>
+    </div>
+    
+    <canvas id="simulationCanvas" width="800" height="400"></canvas>
+
+    <div class="chart-container">
+        <canvas id="populationChart" width="770" height="180"></canvas>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
